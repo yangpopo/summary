@@ -2,19 +2,21 @@ cordova开发调试环境安卓端安装
 
 1.安装git   https://git-scm.com/downloads
 2.安装node  http://nodejs.cn/download/
-3.安装java环境  es8  https://www.oracle.com/java/technologies/javase-jdk8-downloads.html
+3.安装java环境  es8  https://www.oracle.com/java/technologies/javase-jdk8-downloads.html (配置相关的环境变量)
 4.安装cordova   npm install -g cordova
-5.安装Android Studio   http://www.android-studio.org/
-6.在Android Studio里面安装Android sdk api28
-7.在Android Studio安装虚拟机版本要 api28
-8.在vs code里面安装Cordova Tools插件
-9.vs code里面开启调试选择Run Android on emulator在虚拟机上调试,Run Android on device在真机上运行
+5.安装gradle  http://hexo.wbjiang.cn/gradle%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html (配置相关环境变量)
+6.安装Android Studio   http://www.android-studio.org/
+7.在Android Studio里面安装Android sdk api28 (配置sdk环境变量)
+8.在Android Studio安装虚拟机版本要 api28
+9.在vs code里面安装Cordova Tools插件
+10.vs code里面开启调试选择Run Android on emulator在虚拟机上调试,Run Android on device在真机上运行
 
 
 cordova  常用命令
 $ cordova create hello 创建app
 $ cordova platform add android --save 添加安卓平台
-$ cordova platform ls 检查编译环境
+$ cordova platform ls 检查可以编译的最低版本
+$ cordova requirements 检查编译环境
 $ cordova run --list 查看模拟器手机连接列表
 $ cordova build android 编译安卓版本
 $ cordova emulate android 在模拟器上运行
