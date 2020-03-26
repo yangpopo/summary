@@ -22,3 +22,7 @@ $ cordova build android 编译安卓版本
 $ cordova emulate android 在模拟器上运行
 $ cordova run android 在手机上运行
 $ cordova plugin add <插件名> 添加插件
+
+
+检查手机连接状态
+$ adb devices
