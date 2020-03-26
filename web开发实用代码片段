@@ -1,0 +1,27 @@
+本地启动服务预览静态页面
+$ npm install http-server -g
+$ http-server -c-1 
+
+<!--微信连接分享-->
+<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="https://wts.itqiche.com/wxapi/jssdk.php" type="text/javascript" charset="utf-8" async defer></script>
+<script type="text/javascript">
+//布署地址
+window.baseurl=window.location.href.split('#')[0];
+window.shareData = {
+    title:'爱驰U5 3D数字展厅',
+    desc: '爱驰U5数字展厅 带你沉浸式体验新势代品质SUV',
+    desc2:'',
+    link: window.baseurl,
+    imgUrl: 'https://wts.itqiche.com/u5/shareImg.jpg',
+    success: function () {
+    },
+    cancel: function () {
+    }
+};
+wx.ready(function () {
+    wx.onMenuShareAppMessage(shareData);
+    wx.onMenuShareTimeline(shareData);
+
+})
+</script>
