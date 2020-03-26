@@ -1,6 +1,7 @@
 本地启动服务预览静态页面
 $ npm install http-server -g
 $ http-server -c-1 
+$ http-server -p 3000 指定端口号
 
 <!--微信连接分享-->
 <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
@@ -25,3 +26,19 @@ wx.ready(function () {
 
 })
 </script>
+
+
+
+前端常见跨域解决方案（全）
+
+跨域解决方案
+1、 通过jsonp跨域
+2、 document.domain + iframe跨域
+3、 location.hash + iframe
+4、 window.name + iframe跨域
+5、 postMessage跨域
+6、 跨域资源共享（CORS）
+7、 nginx代理跨域
+8、 nodejs中间件代理跨域
+9、 WebSocket协议跨域
+详细说明地址:https://segmentfault.com/a/1190000011145364
