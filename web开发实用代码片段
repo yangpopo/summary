@@ -44,9 +44,11 @@ wx.ready(function () {
 详细说明地址:https://segmentfault.com/a/1190000011145364
 
 
-// 设置浏览器不记录上次滚动条的位置--刷新重置滚动条
+// 设置浏览器不记录上次滚动条的位置--禁止刷新重置滚动条
 if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
 }
 
+// 网站logo
+<link rel="icon" type="image/x-icon" href="./img/ico.ico" />
 
