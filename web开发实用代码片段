@@ -42,3 +42,11 @@ wx.ready(function () {
 8、 nodejs中间件代理跨域
 9、 WebSocket协议跨域
 详细说明地址:https://segmentfault.com/a/1190000011145364
+
+
+// 设置浏览器不记录上次滚动条的位置--刷新重置滚动条
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+
